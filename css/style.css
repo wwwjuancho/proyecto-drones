@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/**font-family: 'Roboto', sans-serif;*/
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+footer div{
+    margin: 25px;
+}
+.bogota{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.redesSociales{
+    display: flex;
+    gap: 20px;
+}
+.segundaSeccion{
+    background-color: rgba(217, 217, 217, 0.28);
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+footer p, footer div h3{
+    color: white;
+}
+.inicio{
+    background-image: url("../assets/Imagenes/inicio/Rectangle\ 1drone-1.png");
+    width: 100%;
+    height: 300px;
+}
+.barra{
+    display: flex;
+    background-color: rgba(217, 217, 217, 0.19);
+}
+li a{
+    color:white;
+    text-decoration: none;
+    font-size: 23px;
+}
+header{
+    background-color: black;
+}
+.principal{
+    text-decoration:underline;
+}
+.explicacion{
+    display: flex;
+    box-decoration-break: underline;
+    justify-content: center;
+}
+p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 2;
+}
+.ciudades{
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: black;
+    gap: 150px;
+}
+header div div a img{
+    padding: 5px 10px;
+}
+header div div{
+    width: 15%;
+}
+
+.vuelosRealizados{
+    margin: 20px 0px;
+}
+nav ul{
+    display: flex;    
+    list-style: none;
+    gap: 60px;
+    margin-top: 18px;
+}
+
+.barra2{
+    display: flex;
+    flex-flow: row wrap;
+}
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left:400px;
+}
+.lasCards{
+    gap: 30px;
+}
+.cotizar{
+    color: black;
+    text-decoration: none;
+}
+.aCotizar{
+    text-decoration-color: black;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 55px;
+    padding-bottom: 25px;
+
+}
+.imagenServicios{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 290px;
+}
+.imagenServicios p{
+    text-align: center;
+}
+section h1{
+    padding: 20px 20px ;
+}
+.operacion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.expli{
+    width: 280px;
+    height: 70px;
+}
+.formulario{
+    display: grid;
+    align-items: center;
+    padding: 10px 0px;
+}
+.contacto{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+.enviar{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.flota{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.fotoFlota p{
+    width: 320px;
+    text-align: left;
+}
+.fotoFlota{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parrafoArticulo{
+    width: 320px;
+    text-align: justify;
+    padding: 40px;
+}
+.articulo1, .articulo2, .articulo3{
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+}
+.articulo2{
+    flex-direction: row-reverse;
+}
+.articulo3{
+    grid-area: articulo3;
+}
+.seccionArticulos{
+    display: grid;
+    padding-bottom: 30px;
+    grid-template-areas:
+    "articulo1 articulo2"
+    "articulo3 articulo3"
+    ;
+}
+.ubicacion{
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+.ubicacion .text{
+    padding-left: 50px;
+}
+.ubicacion div iframe{
+    border-radius: 10%;
+}
+.soporte{
+    padding:0px 100px;
+}
+.emailWhatsapp, .emailWhatsapp div{
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.form1, .form2{
+    display: flex;
+    flex-direction: column;
+}
+.form1 label, .form2 label{
+    display: flex;
+    flex-direction: column;
+}
+.normativas div p{
+    width: 350px;
+}
+.normativas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.normativas div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 768px){
+   footer, header, nav, section, main, .ubicacion{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+   }
+   .barra2{
+    display: flex;
+   }
+   .ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .text{
+    text-align: center;
+   }
+   .normativas{
+    display: flex;
+    flex-direction: column;
+   }
+}
+@media (max-width: 320px){
+    nav{
+        display: none;
+    }
+}
